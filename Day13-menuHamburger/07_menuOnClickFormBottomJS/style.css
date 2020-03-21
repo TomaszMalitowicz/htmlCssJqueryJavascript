@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    height: 150vh;
+    margin: 0 100px;
+}
+
+body p {
+    text-align: justify;
+    line-height: 200%;
+
+}
+
+.arrow {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.arrow.on {
+    transform: rotate(180deg);
+    bottom: 330px;
+}
+
+nav {
+    position: fixed;
+    height: 300px;
+    left: 0;
+    right: 0;
+    bottom: -270px;
+    background-color: #000;
+    transition: .3s linear;
+}
+
+nav.on {
+    bottom: 0px;
+}

@@ -1,0 +1,38 @@
+/* Styleeeeeeeeeeeeeeeeee */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    /* jak wyśrodkować szachownice przy użyciu własciwości flex */
+    justify-content: center;
+    /*centrujemy w tym wypadku poziomo*/
+    align-items: center;
+    /*centrujemy w tym wypadku pioniowo*/
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto auto; */
+    /*centrowanie prawie po staremu ponieważ pierwsze auto nie działa bez flexboxa */
+    width: 50vw;
+    height: 50vw;
+    border: 1px solid black;
+}
+
+
+div {
+    flex-basis: 20%;
+    height: 20%;
+    background-color: #000;
+}
+
+div:nth-child(odd) {
+    background-color: #fff;
+}

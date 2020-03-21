@@ -1,0 +1,44 @@
+/* Styleeeeeeeee */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sekcja1 {
+    background-color: green;
+    height: 100vh;
+}
+
+.sekcja2 {
+    background-color: black;
+    height: 500px;
+}
+
+.sekcja3 {
+    background-color: rebeccapurple;
+    height: 1290px;
+}
+
+.sekcja4 {
+    background-color: brown;
+    height: 150vh;
+}
+
+.info {
+    position: fixed;
+    left: 0;
+    bottom: -75px;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 0 3px 3px gray;
+    background-color: rgb(200, 200, 200);
+    font-size: 30px;
+    line-height: 70px;
+    text-align: center;
+    transition: .8s;
+}
+
+.info.active {
+    bottom: 0;
+}

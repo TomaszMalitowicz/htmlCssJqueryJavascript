@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        :root {
+            --sizeRect: 25vh;
+        }
+
+
+
+        label {
+            font-size: 40px;
+        }
+
+        input {
+            width: 40px;
+            height: 40px;
+            margin-right: 40px;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid black;
+            width: var(--sizeRect);
+            height: var(--sizeRect);
+            transition: .3s;
+        }
+
+        #size:checked~div {
+            width: calc(var(--sizeRect) * 2);
+            height: calc(var(--sizeRect) *2);
+        }
+
+        #rotate:checked~div {
+            transform: translate(-50%, -50%) rotate(225deg);
+        }
+
+        #color:checked~div {
+            background-color: #000;
+        }
+
+        #glow:checked~div {
+            box-shadow: 0 0 40px 12px yellow;
+        }
+
+        #size:checked~#glow:checked~div {
+            box-shadow: 0 0 100 12px red;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="size">2 x większy</label>
+    <input type="checkbox" id="size">
+
+    <label for="rotate">obrót 45 stopni</label>
+    <input type="checkbox" id="rotate">
+
+    <label for="color">Kolor</label>
+    <input type="checkbox" id="color">
+
+    <label for="glow">światło</label>
+    <input type="checkbox" id="glow">
+
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+div {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+div p {
+  color: blue;
+  padding: 20px;
+  margin: 20px;
+  -webkit-transform: translate(50px);
+          transform: translate(50px);
+}
+/*# sourceMappingURL=style.css.map */

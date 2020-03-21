@@ -1,0 +1,98 @@
+/* Styleeeeeeeeeeeeeeeeeee */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.menu {
+    position: relative;
+    top: 0%;
+    background-color: royalblue;
+    text-align: right;
+}
+
+.menu ul li {
+    list-style: none;
+    float: left;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: white;
+    line-height: 60px;
+    padding: 0px 30px;
+    border-right: 2px solid white;
+}
+
+.menu ul li:nth-last-child(1) a {
+    border-right: none;
+}
+
+header img {
+    position: absolute;
+    /* width: 100%; */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    max-height: 40%;
+    float: left;
+}
+
+body {
+    height: 200vh;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+
+.arrow {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: royalblue;
+    border-style: none;
+    border-radius: 50%;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+
+.arrow i {
+    /* display: block; */
+    color: white;
+    animation: arrow 1s linear infinite;
+    transform: translateY(-70px);
+    text-shadow: 0 -20px 0 white, 0 -40px 0 white;
+}
+
+
+@keyframes arrow {
+    0% {
+        transform: translateY(130%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}

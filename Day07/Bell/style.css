@@ -1,0 +1,42 @@
+/* styleeeeeeeeeeeeeeeeeeeeee */
+
+.bell {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 6px solid cadetblue;
+    font-size: 50px;
+    color: cadetblue;
+    text-align: center;
+    line-height: 80px;
+}
+
+.bell i {
+    animation: rotate .4s linear infinite alternate;
+    transform-origin: 50% 0%;
+    transition: .3s;
+}
+
+.bell:hover {
+    background-color: cadetblue;
+}
+
+.bell:hover i {
+    color: white;
+    animation-duration: .15s;
+    /* background-color: cadetblue; */
+    /* animation-play-state: paused; */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(-30deg);
+    }
+}

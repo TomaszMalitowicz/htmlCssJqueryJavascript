@@ -1,0 +1,63 @@
+/* styleeeeeeeeeeeeeeeeeeeeee */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin: 30px 0;
+
+}
+
+
+section {
+    display: flex;
+    height: 80vh;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto auto;
+}
+
+.col {
+    box-sizing: border-box;
+    flex-basis: 25%;
+    background-color: #DDDCDD;
+    padding: 20px;
+    /* kontener */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* justify-content: space-around; */
+    /* align-content: center; */
+}
+
+.col>* {
+    padding-bottom: 35px;
+}
+
+.col img {
+    width: 80%;
+    align-self: center;
+}
+
+.price {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.price span {
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid black;
+}

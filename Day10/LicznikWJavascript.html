@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Licznik w Javascript</title>
+    <style>
+        body {
+            line-height: 100vh;
+            font-size: 60px;
+            text-align: center;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        button:nth-of-type(1) {
+            position: fixed;
+            top: 40px;
+            left: 50px;
+        }
+
+        button:nth-of-type(2) {
+            position: fixed;
+            top: 40px;
+            right: 50px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Dodaj</button>
+    <button>Odejmij</button>
+    Liczba Kliknięć: <span class="counter">0</span>
+    <script>
+        //zmienne
+        let counter = 0;
+        const btnAdd = document.querySelector('button:nth-of-type(1)');
+        const btnMinus = document.querySelector('button:nth-of-type(2)');
+        //Pobieramy potrzebne elementy strony
+
+        const spanCounter = document.querySelector("span.counter");
+        // const clikElement = document.querySelector("body");
+
+        //Nasłuchiwanie na zdarzenie
+        btnAdd.addEventListener('click', function () {
+            counter++
+            spanCounter.textContent = counter;
+        })
+
+        btnMinus.addEventListener('click', function () {
+            counter--
+            spanCounter.textContent = counter;
+        })
+
+        // document.body.addEventListener("click", function () {
+        //     counter = counter + 1;
+        //     // console.log(counter);
+        //     spanCounter.textContent = counter;
+        // })
+    </script>
+</body>
+
+
+</html>

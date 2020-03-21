@@ -1,0 +1,56 @@
+/* Styleeeeeeeeeeeeee */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+nav {
+    background-color: #000;
+    align-self: stretch;
+    padding: 15px 0;
+    /* text-align: center; */
+}
+
+header {
+    background-color: royalblue;
+    width: 100%;
+    max-width: 1200px;
+    flex-basis: 30vh;
+    align-self: stretch;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    background-color: #f00;
+    flex-grow: 1;
+    align-self: stretch;
+    background-color: cadetblue;
+}
+
+main {
+    flex-grow: 1;
+    background-color: gray;
+}
+
+aside {
+    flex-basis: 30%;
+    min-width: 280px;
+}
+
+footer {
+    background-color: #000;
+    align-self: stretch;
+}
